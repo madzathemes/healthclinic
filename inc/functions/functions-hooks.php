@@ -383,7 +383,7 @@ function healthclinic_header_script() {
 
     function healthclinic_fonts_url() {
 
-      $theme_font = "Lato:400,900,700";
+      $theme_font = "Nunito:100,400,900,700";
 
         /*
         Translators: If there are characters in your language that are not supported
@@ -473,13 +473,6 @@ function healthclinic_class($classes) {
 		}
 	}
 
-	if(!empty($options['menu_random'])) {
-		if($options['menu_random']!="1") {
-			$body_class .= ' random-off';
-		}
-	} else {
-		$body_class .= ' random-off';
-	}
 
 	if(!empty($options['menu_top_ad'])) {
 		if($options['menu_top_ad']=="ad") {
