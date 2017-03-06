@@ -46,7 +46,10 @@ else if(!empty($option['menu_background_width'])) {
 	<?php } } ?>
 </div>
 <div class="mt-header-space hide-desktop"></div>
-<div class="mt-head">
+
+
+<?php $title_bg = get_post_meta(get_the_ID(), "madzaplug_title_bg", true); ?>
+<div class="mt-head" <?php if(!empty($title_bg)) { ?> style="background-image:url('<?php echo esc_url($title_bg); ?>');" <?php } ?>>
 	<div class="header-wrap" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 		<div class="header-mt-container-wrap">
 			<div class="container mt-header-container">
