@@ -46,13 +46,7 @@ else if(!empty($option['menu_background_width'])) {
 	<?php } } ?>
 </div>
 <div class="mt-header-space hide-desktop"></div>
-<?php if  (!empty($optioz['header_ad_top'])) {  ?>
-	<div class="mt-t-ad">
-		<div class="mt-t-ad-in">
-			<?php echo html_entity_decode($optioz['header_ad_top']); ?>
-		</div>
-	</div>
-<?php } ?>
+
 <div class="header-wrap" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 	<div class="header-mt-container-wrap">
 		<div class="container mt-header-container">
@@ -228,29 +222,4 @@ function healthclinic_header_fixed() { ?>
 			</div>
 		</div>
 	</div>
-<?php } add_filter('healthclinic_header_fixed','healthclinic_header_fixed');
-
-function healthclinic_header_share() {
-	if (is_single()) {
-		$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));	?>
-		<?php $option = get_option("healthclinic_theme_options"); ?>
-				<div class="fixed-top">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-
-								<ul class="share">
-									<li class="share-facebook"><a class="mt-radius" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'healthclinic'); ?></span></a></li>
-									<li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php the_title(); ?>-<?php the_permalink(); ?>" target="_blank"><span><?php echo esc_html__('Tweet on Twitter', 'healthclinic'); ?></span></a></li>
-									<li class="share-more">
-										<div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
-										<a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google mt-radius-b"></div></a>
-										<a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest mt-radius-b"></div></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-	<?php } ?>
-<?php } add_filter('healthclinic_header_share','healthclinic_header_share'); ?>
+<?php } add_filter('healthclinic_header_fixed','healthclinic_header_fixed'); ?>

@@ -36,7 +36,6 @@ if(!empty($style)){
 <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); if ( is_plugin_active( 'magazine-themes-bar/magazine-themes-bar.php' ) ) { magazine_themes_bar(); } ?>
 
 <div class="mt-outer-wrap mt-fixed-wrap">
-	<?php	if(!empty( $option['menu_share'])){	healthclinic_header_share();	} ?>
 	<?php healthclinic_header_fixed(); ?>
 </div>
 
