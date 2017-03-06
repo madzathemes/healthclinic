@@ -46,64 +46,66 @@ else if(!empty($option['menu_background_width'])) {
 	<?php } } ?>
 </div>
 <div class="mt-header-space hide-desktop"></div>
-
-<div class="header-wrap" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-	<div class="header-mt-container-wrap">
-		<div class="container mt-header-container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="head container-fluid">
-						<div class="head-logo"><?php healthclinic_logo(); ?></div>
-						<?php if  (!empty($option['menu_top_ad'])) {  ?>
-							<?php if  ($option['menu_top_ad']=="ad") {  ?>
-								<div class="top-ad">
-									<?php if  (!empty($optioz['header_ad_top'])) {  ?>
-								    <div class="text-right">
-								      <?php echo html_entity_decode($optioz['header_ad_top']); ?>
-								    </div>
-								  <?php } ?>
-								</div>
+<div class="mt-head">
+	<div class="header-wrap" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+		<div class="header-mt-container-wrap">
+			<div class="container mt-header-container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="head container-fluid">
+							<div class="head-logo"><?php healthclinic_logo(); ?></div>
+							<?php if  (!empty($option['menu_top_ad'])) {  ?>
+								<?php if  ($option['menu_top_ad']=="ad") {  ?>
+									<div class="top-ad">
+										<?php if  (!empty($optioz['header_ad_top'])) {  ?>
+									    <div class="text-right">
+									      <?php echo html_entity_decode($optioz['header_ad_top']); ?>
+									    </div>
+									  <?php } ?>
+									</div>
+								<?php } else { echo healthclinic_top_content(); } ?>
 							<?php } else { echo healthclinic_top_content(); } ?>
-						<?php } else { echo healthclinic_top_content(); } ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="header-menu mt-header-container <?php if(!empty($option['menu_search'])) { if($option['menu_search']=="1") { ?>search-on<?php } } if(!empty($option['menu_small_on'])) { ?> small-on<?php } ?> ">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="top-nav container-fluid">
+		<div class="header-menu mt-header-container <?php if(!empty($option['menu_search'])) { if($option['menu_search']=="1") { ?>search-on<?php } } if(!empty($option['menu_small_on'])) { ?> small-on<?php } ?> ">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="top-nav container-fluid">
 
-						<div class="nav-button mt-radius pointer pull-left menu-background-left <?php if(empty($option['menu_small_on'])) { ?>hide-desktop<?php } ?>">
-							<div class="mt-m-cool-button">
-								<span class="mt-m-cool-button-line"></span>
-							</div>
-						</div>
-
-						<div class="nav pull-left menu-background mt-radius" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
-							<?php healthclinic_nav(); ?>
-							<?php healthclinic_socials(); ?>
-						</div>
-
-						<?php if(!empty($option['menu_search'])) { if($option['menu_search']=="1") { ?>
-							<div class="search-close"></div><div class="search-close"></div>
-							<div class="nav-search-wrap pull-right menu-background-right mt-radius">
-								<div class="nav-search pointer"></div>
-								<div class="nav-search-input mt-radius">
-									<form method="get" action="<?php echo esc_url(home_url('/')); ?>/">
-										<input type="text" placeholder="<?php esc_html_e( 'Type and hit enter to search ...', 'healthclinic' ); ?>"  name="s" >
-									</form>
+							<div class="nav-button mt-radius pointer pull-left menu-background-left <?php if(empty($option['menu_small_on'])) { ?>hide-desktop<?php } ?>">
+								<div class="mt-m-cool-button">
+									<span class="mt-m-cool-button-line"></span>
 								</div>
 							</div>
-						<?php } } ?>
+
+							<div class="nav pull-left menu-background mt-radius" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
+								<?php healthclinic_nav(); ?>
+								<?php healthclinic_socials(); ?>
+							</div>
+
+							<?php if(!empty($option['menu_search'])) { if($option['menu_search']=="1") { ?>
+								<div class="search-close"></div><div class="search-close"></div>
+								<div class="nav-search-wrap pull-right menu-background-right mt-radius">
+									<div class="nav-search pointer"></div>
+									<div class="nav-search-input mt-radius">
+										<form method="get" action="<?php echo esc_url(home_url('/')); ?>/">
+											<input type="text" placeholder="<?php esc_html_e( 'Type and hit enter to search ...', 'healthclinic' ); ?>"  name="s" >
+										</form>
+									</div>
+								</div>
+							<?php } } ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<?php healthclinic_title(); ?>
 </div>
 <?php } add_filter('healthclinic_header','healthclinic_header');
 
