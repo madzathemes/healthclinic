@@ -47,16 +47,28 @@ function healthclinic_customize_header($wp_customize){
     $wp_customize->add_section('healthclinic_logo', array(
         'title'    	=> esc_html__('Logo Image', 'healthclinic'),
         'priority' => 122,
-
-    'panel'  => 'panel_header',
+        'panel'  => 'panel_header',
     ));
 
     $wp_customize->add_section('healthclinic_logo_settings', array(
         'title'    	=> esc_html__('Logo Settings', 'healthclinic'),
         'priority' => 123,
-
-    'panel'  => 'panel_header',
+        'panel'  => 'panel_header',
     ));
+
+    $wp_customize->add_section('healthclinic_title_settings', array(
+        'title'    	=> esc_html__('Title Settings', 'healthclinic'),
+        'priority' => 124,
+        'panel'  => 'panel_header',
+    ));
+
+    Kirki::add_field( 'healthclinic_theme_options[title_bg]', array(
+    'type'        => 'image',
+    'settings'    => 'healthclinic_theme_options[title_bg]',
+    'label'       => esc_attr__( 'Background Image', 'healthclinic' ),
+    'section'     => 'healthclinic_title_settings',
+    'option_type' => 'option',
+    ) );
 
 
 
@@ -112,11 +124,11 @@ function healthclinic_customize_header($wp_customize){
     'default'     => 176,
     'option_type' => 'option',
     'choices'     => array(
-      'min'  => 20,
-      'max'  => 500,
-      'step' => 1,
-    ),
-  ) );
+        'min'  => 20,
+        'max'  => 500,
+        'step' => 1,
+      ),
+    ) );
 
     //  =============================
     //  = Logo Height

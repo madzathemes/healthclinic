@@ -383,7 +383,7 @@ function healthclinic_header_script() {
 
     function healthclinic_fonts_url() {
 
-      $theme_font = "Nunito:200,400,600";
+      $theme_font = "Nunito:200,400,600,700";
 
         /*
         Translators: If there are characters in your language that are not supported

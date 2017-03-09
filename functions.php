@@ -31,7 +31,7 @@ require get_template_directory() .'/inc/single/single-media.php';
 require get_template_directory() .'/inc/single/single-sidebar.php';
 require get_template_directory() .'/inc/single/single-content.php';
 require get_template_directory() .'/inc/single/single-styles.php';
-
+define('KC_LICENSE', 'l483kg4m-jxbv-ju7k-or7h-yhgd-q3jl1ec3fqyi');
 /*-----------------------------------------------------------------------------------*/
 /* Theme Setup
 /*-----------------------------------------------------------------------------------*/

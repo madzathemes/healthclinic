@@ -49,7 +49,7 @@ else if(!empty($option['menu_background_width'])) {
 
 
 <?php $title_bg = get_post_meta(get_the_ID(), "madzaplug_title_bg", true); ?>
-<div class="mt-head" <?php if(!empty($title_bg)) { ?> style="background-image:url('<?php echo esc_url($title_bg); ?>');" <?php } ?>>
+<div class="mt-head" <?php if(!empty($title_bg)) { ?> style="background-image:url('<?php echo esc_url($title_bg); ?>');" <?php } else if(!empty($option['title_bg'])) { ?> style="background-image:url('<?php echo esc_url($option['title_bg']); ?>');" <?php } ?>>
 	<div class="header-wrap" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 		<div class="header-mt-container-wrap">
 			<div class="container mt-header-container">
@@ -80,20 +80,22 @@ else if(!empty($option['menu_background_width'])) {
 					<div class="col-md-12">
 						<div class="top-nav container-fluid">
 
-							<div class="nav-button mt-radius pointer pull-left menu-background-left <?php if(empty($option['menu_small_on'])) { ?>hide-desktop<?php } ?>">
+							<div class="nav-button mt-radius pointer pull-left menu-background <?php if(empty($option['menu_small_on'])) { ?>hide-desktop<?php } ?>">
 								<div class="mt-m-cool-button">
 									<span class="mt-m-cool-button-line"></span>
 								</div>
 							</div>
 
-							<div class="nav pull-left menu-background mt-radius" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
+							<div class="nav pull-left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
 								<?php healthclinic_nav(); ?>
-								<?php healthclinic_socials(); ?>
+								<div class="pull-right menu-background mt-radius">
+									<?php healthclinic_socials(); ?>
+								</div>
 							</div>
 
 							<?php if(!empty($option['menu_search'])) { if($option['menu_search']=="1") { ?>
 								<div class="search-close"></div><div class="search-close"></div>
-								<div class="nav-search-wrap pull-right menu-background-right mt-radius">
+								<div class="nav-search-wrap pull-right menu-background mt-radius">
 									<div class="nav-search pointer"></div>
 									<div class="nav-search-input mt-radius">
 										<form method="get" action="<?php echo esc_url(home_url('/')); ?>/">
@@ -155,7 +157,7 @@ function healthclinic_logo() {
 		</a>
 	<?php } else { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
-			<img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" width="176" height="40" alt="<?php echo the_title(); ?>" />
+			<img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" width="178" height="39" alt="<?php echo the_title(); ?>" />
 		</a>
 	<?php }
 }
@@ -180,9 +182,9 @@ add_filter('healthclinic_logo_mobile','healthclinic_logo_mobile');
 
 function healthclinic_nav() {
 	if(class_exists('md_walker_')) {
-		wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'sf-menu', 'walker'	=> new md_walker, 'echo' => true, 'depth' => 3));
+		wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'sf-menu menu-background mt-radius', 'walker'	=> new md_walker, 'echo' => true, 'depth' => 3));
 	} else {
-		wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'sf-menu', 'echo' => true, 'depth' => 3));
+		wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'sf-menu menu-background mt-radius', 'echo' => true, 'depth' => 3));
 	}
 }
 add_filter('healthclinic_nav','healthclinic_nav');
