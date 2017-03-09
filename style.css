@@ -5141,6 +5141,9 @@ li.mtc-buy {
 .kc-elm .widget {
   margin: 0;
 }
+.kc-container {
+  padding: 0!important;
+}
 body .kc-container {
   max-width: 100%!important;
 }
