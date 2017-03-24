@@ -92,4 +92,22 @@ jQuery(document).ready(function() {
           }
         }]
     });
+
+    jQuery('.mt-slider-slides').slick({
+       slidesToShow: 1,
+       arrows: false,
+       dots: true,
+       appendDots: '.mt-slider-dots',
+       autoplay: true,
+       lazyLoad: 'ondemand',
+       rtl: $rtl,
+    });
+
+    jQuery('.mt-slider-next').click(function() {
+      jQuery('.mt-slider-slides').slick('slickNext');
+    });
+
+    jQuery('.mt-slider-prev').click(function() {
+      jQuery('.mt-slider-slides').slick('slickPrev');
+    });
 });

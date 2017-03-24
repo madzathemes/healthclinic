@@ -383,7 +383,7 @@ function healthclinic_header_script() {
 
     function healthclinic_fonts_url() {
 
-      $theme_font = "Nunito:200,400,600,700";
+      $theme_font = "Nunito:200,400,600,700,900";
 
         /*
         Translators: If there are characters in your language that are not supported
@@ -470,6 +470,16 @@ function healthclinic_class($classes) {
 	} else if (!empty($options['boxed'])) {
 		if ($options['boxed']=="1") {
 			$body_class .= ' boxed-layout-on';
+		}
+	}
+
+	$slider = get_post_meta(get_the_ID(), "madzaplug_slider_type", true);
+	if(!empty($slider)){
+		if($slider=="slider-mt"){
+			$body_class .= ' remove-title slider-mt mt-slider-on';
+		}
+		if($slider=="shortcode"){
+			$body_class .= ' remove-title slider-shortcode mt-slider-on';
 		}
 	}
 

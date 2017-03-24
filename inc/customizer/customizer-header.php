@@ -488,10 +488,10 @@ function healthclinic_customize_header($wp_customize){
 
 
 		//  =============================
-		//  = Header Top                =
+		//  = Header Settings                =
 		//  =============================
 		$wp_customize->add_section('healthclinic_header_top', array(
-        'title'    	=> esc_html__('Header Top', 'healthclinic'),
+        'title'    	=> esc_html__('Header Settings', 'healthclinic'),
         'priority' => 124,
 				'panel'  => 'panel_header',
     ));
@@ -541,19 +541,7 @@ function healthclinic_customize_header($wp_customize){
        ),
    ) );
 
-   Kirki::add_field( 'healthclinic_theme_options[menu_share]', array(
-       'type'        => 'switch',
-       'settings'    => 'healthclinic_theme_options[menu_share]',
-       'label'       => esc_attr__( 'Fixed Share Buttons', 'healthclinic' ),
-       'section'     => 'healthclinic_header_top',
-       'default'     => '2',
-       'option_type' => 'option',
-       'priority'    => 10,
-       'choices'     => array(
-         '1'  => esc_attr__( 'Enable', 'healthclinic' ),
-         '2' => esc_attr__( 'Disable', 'healthclinic' ),
-       ),
-   ) );
+
 
    Kirki::add_field( 'healthclinic_theme_options[menu_fixed]', array(
   	'type'        => 'select',
@@ -570,64 +558,6 @@ function healthclinic_customize_header($wp_customize){
   		'mt-fixed-disabled' => esc_attr__( 'Disable', 'healthclinic' ),
   	),
     ));
-
-
-		// Latest Posts
-		$wp_customize->add_setting('healthclinic_theme_options[url_latest]', array(
-			'capability' => 'edit_theme_options',
-			'type' => 'option',
-			'sanitize_callback' => 'esc_attr'
-		));
-		$wp_customize->add_control('healthclinic_theme_options[url_latest]', array(
-			'label' => esc_html__('Button: Latest Posts', 'healthclinic'),
-			'section' => 'healthclinic_header_top',
-			'type' => 'dropdown-pages',
-			'settings' => 'healthclinic_theme_options[url_latest]',
-			'priority'   => 2,
-		));
-
-		// Popular Posts
-		$wp_customize->add_setting('healthclinic_theme_options[url_popular]', array(
-			'capability' => 'edit_theme_options',
-			'type' => 'option',
-			'sanitize_callback' => 'esc_attr'
-		));
-		$wp_customize->add_control('healthclinic_theme_options[url_popular]', array(
-			'label' => esc_html__('Button: Popular Posts', 'healthclinic'),
-			'section' => 'healthclinic_header_top',
-			'type' => 'dropdown-pages',
-			'settings' => 'healthclinic_theme_options[url_popular]',
-			'priority'   => 3,
-		));
-
-		// Hot Posts
-		$wp_customize->add_setting('healthclinic_theme_options[url_hot]', array(
-			'capability' => 'edit_theme_options',
-			'type' => 'option',
-			'sanitize_callback' => 'esc_attr'
-		));
-		$wp_customize->add_control('healthclinic_theme_options[url_hot]', array(
-			'label' => esc_html__('Button: Hot Posts', 'healthclinic'),
-			'section' => 'healthclinic_header_top',
-			'type' => 'dropdown-pages',
-			'settings' => 'healthclinic_theme_options[url_hot]',
-			'priority'   => 4,
-		));
-
-		// Trending Posts
-		$wp_customize->add_setting('healthclinic_theme_options[url_trending]', array(
-			'capability' => 'edit_theme_options',
-			'type' => 'option',
-			'sanitize_callback' => 'esc_attr'
-		));
-		$wp_customize->add_control('healthclinic_theme_options[url_trending]', array(
-			'label' => esc_html__('Button: Trending Posts', 'healthclinic'),
-			'section' => 'healthclinic_header_top',
-			'type' => 'dropdown-pages',
-			'settings' => 'healthclinic_theme_options[url_trending]',
-			'priority'   => 5,
-		));
-
 
 
 
@@ -656,6 +586,142 @@ function healthclinic_customize_header($wp_customize){
 				'description'        => 'Default: Download healthclinic',
         'settings'   => 'healthclinic_header_link_name',
     ));
+
+
+    //  =============================
+		//  = Header Information                =
+		//  =============================
+		$wp_customize->add_section('healthclinic_header_information', array(
+        'title'    	=> esc_html__('Header Information', 'healthclinic'),
+        'priority' => 124,
+				'panel'  => 'panel_header',
+    ));
+
+    Kirki::add_field( 'healthclinic_theme_options[head_phone]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_phone]',
+    	'label'    => esc_html__( 'Phone', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 10,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_email]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_email]',
+    	'label'    => esc_html__( 'E-mail', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 10,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_address]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_address]',
+    	'label'    => esc_html__( 'Address', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 10,
+    ));
+
+    Kirki::add_field( 'healthclinic_theme_options[head_phone_2]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_phone_2]',
+    	'label'    => esc_html__( 'Phone (2)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 11,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_email_2]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_email_2]',
+    	'label'    => esc_html__( 'E-mail (2)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 11,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_address_2]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_address_2]',
+    	'label'    => esc_html__( 'Address (2)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 11,
+    ));
+
+    Kirki::add_field( 'healthclinic_theme_options[head_phone_3]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_phone_3]',
+    	'label'    => esc_html__( 'Phone (3)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 12,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_email_3]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_email_3]',
+    	'label'    => esc_html__( 'E-mail (3)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 12,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_address_3]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_address_3]',
+    	'label'    => esc_html__( 'Address (3)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 12,
+    ));
+
+    Kirki::add_field( 'healthclinic_theme_options[head_phone_4]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_phone_4]',
+    	'label'    => esc_html__( 'Phone (4)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 13,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_email_4]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_email_3]',
+    	'label'    => esc_html__( 'E-mail (4)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 13,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_address_4]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_address_4]',
+    	'label'    => esc_html__( 'Address (4)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 13,
+    ));
+
+    Kirki::add_field( 'healthclinic_theme_options[head_phone_5]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_phone_5]',
+    	'label'    => esc_html__( 'Phone (5)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 14,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_email_5]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_email_5]',
+    	'label'    => esc_html__( 'E-mail (5)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 14,
+    ));
+    Kirki::add_field( 'healthclinic_theme_options[head_address_5]', array(
+    	'type'     => 'text',
+    	'settings' => 'healthclinic_theme_options[head_address_5]',
+    	'label'    => esc_html__( 'Address (5)', 'healthclinic' ),
+    	'section'  => 'healthclinic_header_information',
+      'option_type' => 'option',
+    	'priority' => 14,
+    ));
+
 
 
 

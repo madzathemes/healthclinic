@@ -48,3 +48,4 @@ if(!empty($style)){
 <div class="mt-outer-wrap">
 
 <?php healthclinic_header(); ?>
+<?php healthclinic_slider(); ?>

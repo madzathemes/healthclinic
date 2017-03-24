@@ -11,6 +11,7 @@ require get_template_directory() .'/inc/functions/functions-plugins.php';
 require get_template_directory() .'/inc/functions/functions-general.php';
 require get_template_directory() .'/inc/functions/functions-title.php';
 require get_template_directory() .'/inc/functions/functions-footer.php';
+require get_template_directory() .'/inc/functions/functions-slider.php';
 
 /*-----------------------------------------------------------------------------------*/
 /* Customizer
