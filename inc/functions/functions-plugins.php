@@ -37,8 +37,8 @@ function healthclinic_register_required_plugins() {
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
         ),
         array(
-        			'name'     				=> esc_html__( "Page Builder by SiteOrigin","healthclinic" ), // The plugin name
-        			'slug'     				=> 'siteorigin-panels', // The plugin slug (typically the folder name)
+        			'name'     				=> esc_html__( "Page Builder: KingComposer","healthclinic" ), // The plugin name
+        			'slug'     				=> 'kingcomposer', // The plugin slug (typically the folder name)
         			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
               'force_activation'		=> false,
         ),
@@ -49,9 +49,9 @@ function healthclinic_register_required_plugins() {
               'force_activation'		=> false,
         ),
         array(
-            'name'			=> esc_html__( "Magazine Plug","healthclinic" ), // The plugin name
-            'slug'			=> 'magazine-plug', // The plugin slug (typically the folder name)
-            'source'			=> get_template_directory() . '/all_plugins/magazine-plug.zip', // The plugin source
+            'name'			=> esc_html__( "Madza Plug","healthclinic" ), // The plugin name
+            'slug'			=> 'madza-plug', // The plugin slug (typically the folder name)
+            'source'			=> get_template_directory() . '/all_plugins/madza-plug.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
             'version'			=> '3.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
