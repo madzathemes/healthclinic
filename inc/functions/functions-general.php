@@ -27,7 +27,7 @@ function healthclinic_paging_nav() {
 }
 endif;
 
-$navigation_speed = "4.8";
+$navigation_speed = "5.1";
 
 
 if ( ! function_exists( 'healthclinic_entry_meta' ) ) {
