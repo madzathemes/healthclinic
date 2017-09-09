@@ -5393,7 +5393,6 @@ body .kc_button:hover {
 .widget_nav_menu ul li a:hover {
   border-left: 3px solid #2196f3;
   color: #2196f3;
-  font-size: 21px;
   background: white;
 }
 h2.widgettitle {
