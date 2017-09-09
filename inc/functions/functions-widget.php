@@ -12,8 +12,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 		'description' => esc_html__( 'The page sidebar widget area 1', 'healthclinic' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
-				'before_title' => '<h2 class="heading"><span>',
-				'after_title' => '</span></h4>',
+				'before_title' => '<h3 class="heading"><span>',
+				'after_title' => '</span></h3>',
 	) );
 
 
@@ -25,8 +25,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 		'description' => esc_html__( 'The blog sidebar widget area' , 'healthclinic'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
-				'before_title' => '<h2 class="heading"><span>',
-				'after_title' => '</span></h4>',
+				'before_title' => '<h3 class="heading"><span>',
+				'after_title' => '</span></h3>',
 	) );
 
 
@@ -39,8 +39,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 		'description' => esc_html__( 'The single page sidebar widget area' , 'healthclinic'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
-				'before_title' => '<h2 class="heading"><span>',
-				'after_title' => '</span></h4>',
+				'before_title' => '<h3 class="heading"><span>',
+				'after_title' => '</span></h3>',
 	) );
 	/* --------------------------------------------------------------------------------------- Single Buttom Widget Area */
 
@@ -50,8 +50,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 			'description' => esc_html__( 'The post bottom widget area' , 'healthclinic'),
 			'before_widget' => '<div class="widget">',
 			'after_widget' => '<div class="clear"></div></div>',
-					'before_title' => '<h2 class="heading"><span>',
-					'after_title' => '</span></h4>',
+					'before_title' => '<h3 class="heading"><span>',
+					'after_title' => '</span></h3>',
 		) );
 
 	/* --------------------------------------------------------------------------------------- Single Buttom Widget Area */
@@ -62,8 +62,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 				'description' => esc_html__( 'The post bottom widget area' , 'healthclinic'),
 				'before_widget' => '<div class="widget">',
 				'after_widget' => '<div class="clear"></div></div>',
-						'before_title' => '<h2 class="heading"><span>',
-						'after_title' => '</span></h4>',
+						'before_title' => '<h3 class="heading"><span>',
+						'after_title' => '</span></h3>',
 			) );
 
 
@@ -76,8 +76,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 		'description' => esc_html__( 'The search page sidebar widget area' , 'healthclinic'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
-				'before_title' => '<h2 class="heading"><span>',
-				'after_title' => '</span></h4>',
+				'before_title' => '<h3 class="heading"><span>',
+				'after_title' => '</span></h3>',
 	) );
 
 	/* --------------------------------------------------------------------------------------- Author widgets */
@@ -88,8 +88,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 	'description' => esc_html__( 'The Author page sidebar widget area' , 'healthclinic'),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '<div class="clear"></div></div>',
-			'before_title' => '<h2 class="heading"><span>',
-			'after_title' => '</span></h4>',
+			'before_title' => '<h3 class="heading"><span>',
+			'after_title' => '</span></h3>',
 	) );
 
 	/* --------------------------------------------------------------------------------------- Footer Hot Post widgets */
@@ -100,8 +100,8 @@ $mt_columns = get_option("healthclinic_theme_options");
 	'description' => esc_html__( 'The footer host post widget area' , 'healthclinic'),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '<div class="clear"></div></div>',
-			'before_title' => '<h2 class="heading"><span>',
-			'after_title' => '</span></h4>',
+			'before_title' => '<h3 class="heading"><span>',
+			'after_title' => '</span></h3>',
 	) );
 
 
