@@ -156,7 +156,6 @@ body {
     -webkit-overflow-scrolling: auto;
     background:white;
     font-size: 15px;
-    overflow-x: hidden;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -4387,6 +4386,7 @@ ul.page-numbers li {
   -webkit-box-shadow: 0 0 0 white;
   -moz-box-shadow: 0 0 0 white;
   box-shadow: 0 0 0 white;
+  overflow-x: hidden;
 }
 .mobile-menu-active .mt-outer-wrap {
   transform: scale3d(.8,.8,.8)!important;
