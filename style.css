@@ -5380,7 +5380,8 @@ body .kc_button:hover {
 }
 .widget_nav_menu ul li {
   border: 0px solid silver;
-  padding: 0px !important;
+  padding: 0px 0px 1px 0px !important;
+
 }
 .widget_nav_menu ul li a {
   border-left: 1px solid #E4E4E4;
