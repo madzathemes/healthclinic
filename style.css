@@ -156,6 +156,7 @@ body {
     -webkit-overflow-scrolling: auto;
     background:white;
     font-size: 15px;
+    overflow-x: hidden;
 }
 * {
   -webkit-box-sizing: border-box;
