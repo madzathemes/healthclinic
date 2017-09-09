@@ -35,7 +35,8 @@ function healthclinic_css() {
 			.single-cat-wrap .post-categories li a,
 			.mt-load-more:hover,
 			.mt-tabc:before,
-			.mt-subscribe-footer input.mt-s-b:hover { background: '. esc_attr($options['colors_default']) .'; }';
+			.mt-subscribe-footer input.mt-s-b:hover { background: '. esc_attr($options['colors_default']) .'; } .widget_nav_menu ul li a:hover { border-color:'. esc_attr($options['colors_default']) .' !important; }';
+
 	 }
 
 	 // Button Color
