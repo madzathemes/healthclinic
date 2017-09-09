@@ -5394,3 +5394,6 @@ body .kc_button:hover {
   color: #2196f3;
   background: white;
 }
+h2.widgettitle {
+  font-size: 36px
+}
