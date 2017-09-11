@@ -3979,7 +3979,8 @@ opacity: 0.7
     width: 560px;
   }
   .mt-slider-slide > div,
-  .mt-slider-slides { height: 300px !important; }
+  .mt-slider-slides,
+  .mt-slider, .mt-slider .container  { height: 300px !important; }
   .mt-slider h3 { font-size: 21px !important; }
   .mt-slider h2 { font-size: 31px !important; }
 }
