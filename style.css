@@ -3903,6 +3903,10 @@ opacity: 0.7
   .grid-post.style-1.nr-4 h2 {
     font-size: 21px !important;
   }
+  input.mt-s-i,
+  input.mt-s-b {
+    width: 50% !important;
+  }
 }
 
 @media all and (max-width: 715px) {
@@ -3967,9 +3971,7 @@ opacity: 0.7
   }
 }
 @media all and (max-width: 580px) {
-  .mt-s-i {
-    width: 50% !important;
-  }
+
   .poster-carousel .poster-image {
     width: 100%;
   }
