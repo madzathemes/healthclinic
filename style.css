@@ -3967,6 +3967,9 @@ opacity: 0.7
   }
 }
 @media all and (max-width: 580px) {
+  .mt-s-i {
+    width: 50% !important;
+  }
   .poster-carousel .poster-image {
     width: 100%;
   }
