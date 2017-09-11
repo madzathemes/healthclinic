@@ -3689,7 +3689,8 @@ opacity: 0.7
     text-align: center !important;
   }
   .mt-slider-slide > div,
-  .mt-slider-slides {
+  .mt-slider-slides,
+  .mt-slider, .mt-slider .container {
     height: 370px !important;
   }
   .mt-slider h3,
