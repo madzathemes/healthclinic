@@ -61,7 +61,7 @@ if(is_single()) { $more = 1; }?>
 		}
 
 		?>
-		<a class="mt-readmore-url" href="<?php echo get_permalink(); ?>"><?php esc_html__( 'Read More:', 'healthclinic' ) ?></a>
+		<a class="mt-readmore-url" href="<?php echo get_permalink(); ?>"><?php echo esc_html__( 'Read More:', 'healthclinic' ); ?></a>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'healthclinic' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php } ?>
