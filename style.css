@@ -5412,7 +5412,7 @@ body .kc_button:hover {
 ul.menu,
 .widget > ul {
   border: 1px solid #f0f0f0;
-  padding: 20px;
+  padding: 20px 25px 20px;
   box-shadow: 0px 0px 20px #ececec;
 }
 .widget_nav_menu ul li {
