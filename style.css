@@ -83,6 +83,7 @@ a:hover,
   border-radius: 5px;
 }
 .mt-radius-25 ul.menu,
+.mt-radius-25 .widget > ul,
 .mt-radius-25 .mt-radius,
 .mt-radius-25 .mt-radius-b:before,
 .mt-radius-25 textarea,
