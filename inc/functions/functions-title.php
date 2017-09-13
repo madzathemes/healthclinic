@@ -8,6 +8,8 @@
 					<h1><?php printf( esc_html__( 'Search Results for: %s', "healthclinic"  ), '' . get_search_query() . '' ); ?></h1>
         <?php } else if(is_page()) { ?>
           <h1><?php the_title(); ?></h1>
+        <?php } else if(is_blog()) { ?>
+          <h1><?php echo esc_html__( 'News', "healthclinic"  ); ?></h1>
         <?php } else { ?>
           <h1><?php the_title(); ?></h1>
         <?php } ?>
