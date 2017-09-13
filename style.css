@@ -3037,6 +3037,7 @@ h2.entry-title a {
 
 .mt-post-article {
   padding-bottom: 40px;
+  text-align: center !important; 
 }
 .entry-meta .author-info {
   padding: 20px 40px 40px;
