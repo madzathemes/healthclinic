@@ -8,10 +8,9 @@
   $category_name = get_the_category(get_the_ID()); $cat =""; if(!empty($category_name[0])) { $cat =''.$category_name[0]->slug.''; } if ( shortcode_exists( 'posts' ) ) { echo do_shortcode('[posts item_nr=5  category="'.$cat.'" type=small-bottom ]'); }
 
 } ?>
-<?php function healthclinic_single_title() { $subtitle = get_post_meta(get_the_ID(), "magazin_subtitle", true); ?>
-  <h1 class="single-title"  itemprop="headline"><?php echo get_the_title(); ?></h1>
-  <?php if(!empty($subtitle)){ ?><h2 class="single-subtitle" itemprop="description"><?php echo get_post_meta(get_the_ID(), "magazin_subtitle", true); ?></h2><?php } ?>
-<?php } ?>
+<?php function healthclinic_single_title() {
+  $subtitle = get_post_meta(get_the_ID(), "magazin_subtitle", true); ?>
+} ?>
 <?php function healthclinic_single_social() {
 $share_top = "";
 $share_top = get_post_meta(get_the_ID(), "magazin_post_share_top", true);
@@ -53,7 +52,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
     <?php } ?>
 
     <div class="clearfix"></div>
-  
+
     <div class="single-stat-comments">
       <?php if (get_comments_number()!="0") { ?><span class="stat-comments"><?php echo get_comments_number(); ?> Comments</span><?php } ?>
     </div>
