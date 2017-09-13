@@ -5405,6 +5405,10 @@ body .kc_button:hover {
   background-color: #2196f3;
   color: white;
 }
+.menu-services-container {
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+}
 .widget_nav_menu ul li {
   border: 0px solid silver;
   padding: 0px 0px 1px 0px !important;
