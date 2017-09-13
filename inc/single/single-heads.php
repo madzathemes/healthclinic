@@ -53,19 +53,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
     <?php } ?>
 
     <div class="clearfix"></div>
-    <?php if($share_top=="" or $share_top == "yes"){ ?>
-    <ul class="share top">
-      <li class="share-facebook"><a class="mt-radius" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'healthclinic'); ?></span></a></li>
-      <li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php the_title(); ?>-<?php the_permalink(); ?>" target="_blank"><span><?php echo esc_html__('Tweet on Twitter', 'healthclinic'); ?></span></a></li>
-      <li class="share-more">
-        <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
-
-        <a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest mt-radius-b"></div></a>
-        <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google mt-radius-b"></div></a>
-
-      </li>
-    </ul>
-    <?php } ?>
+  
     <div class="single-stat-comments">
       <?php if (get_comments_number()!="0") { ?><span class="stat-comments"><?php echo get_comments_number(); ?> Comments</span><?php } ?>
     </div>
