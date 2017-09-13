@@ -74,7 +74,8 @@ a:hover,
 .mt-radius-5 .mt-coment-nav a,
 .mt-radius-5 .content-button a,
 .mt-radius-5 .kc_button,
-.mtc-border-5  {
+.mtc-border-5,
+.mt-radius-5 .footer-scroll-to-top  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -93,7 +94,8 @@ a:hover,
 .mt-radius-25 .kc_button,
 .mtc-border-25,
 .mct-box:hover:before,
-.mct-box.active:before {
+.mct-box.active:before,
+.mt-radius-25 .footer-scroll-to-top {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
