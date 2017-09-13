@@ -5411,6 +5411,9 @@ ul.menu {
   border: 1px solid #f0f0f0;
   padding: 20px;
   box-shadow: 0px 0px 20px #ececec;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
 .widget_nav_menu ul li {
   border: 0px solid silver;
