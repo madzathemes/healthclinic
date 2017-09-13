@@ -5410,6 +5410,7 @@ body .kc_button:hover {
 ul.menu {
   border: 1px solid #f0f0f0;
   padding: 20px;
+  box-shadow: 10px 10px 5px #888888;
 }
 .widget_nav_menu ul li {
   border: 0px solid silver;
