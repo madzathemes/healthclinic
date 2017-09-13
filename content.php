@@ -15,18 +15,18 @@ if(is_single()) { $more = 1; }?>
 				<?php if(is_single()) {
 					if(!empty($image_settings)) {
 						if($image_settings=="yes") {
-							echo get_the_post_thumbnail(get_the_ID(),"large");
+							echo get_the_post_thumbnail(get_the_ID(),"madza_920");
 						}
 					} else if(!empty($options['post_standart_image'])) {
 						if($options['post_standart_image']=="yes") {
-							echo get_the_post_thumbnail(get_the_ID(),"large");
+							echo get_the_post_thumbnail(get_the_ID(),"madza_920");
 						}
 					} else {
-						echo get_the_post_thumbnail(get_the_ID(),"large");
+						echo get_the_post_thumbnail(get_the_ID(),"madza_920");
 					}
 				} else { ?>
 					<a href="<?php the_permalink(); ?>">
-						<?php echo get_the_post_thumbnail(get_the_ID(),"large"); ?>
+						<?php echo get_the_post_thumbnail(get_the_ID(),"madza_920"); ?>
 					</a>
 				<?php } ?>
 			</div>
