@@ -3035,7 +3035,9 @@ h2.entry-title a {
 }
 /*END AUTHOR BIO CHANGES */
 
-
+.mt-post-article {
+  padding-bottom: 40px;
+}
 .entry-meta .author-info {
   padding: 20px 40px 40px;
   background: #f5f5f5;

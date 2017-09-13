@@ -7,7 +7,7 @@ $image_settings = get_post_meta(get_the_ID(), "magazin_post_image", true);
 $options = get_option("healthclinic_theme_options");
 
 if(is_single()) { $more = 1; }?>
-<article id="post-<?php the_ID(); ?>" class="<?php if ( is_sticky() and !is_single()){ ?> post_sticky <?php } ?>">
+<article id="post-<?php the_ID(); ?>" class="mt-post-article <?php if ( is_sticky() and !is_single()){ ?> post_sticky <?php } ?>">
 
 	<?php if( ! is_search()) { ?>
 		<?php  if ( has_post_thumbnail() ) { ?>
