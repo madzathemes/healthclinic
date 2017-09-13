@@ -76,11 +76,13 @@ a:hover,
 .mt-radius-5 .kc_button,
 .mtc-border-5,
 .mt-radius-5 .footer-scroll-to-top,
-.mt-radius-5 .post-img img  {
+.mt-radius-5 .post-img img,
+.mt-radius-5 ul .menu  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.mt-radius-25 ul .menu,
 .mt-radius-25 .mt-radius,
 .mt-radius-25 .mt-radius-b:before,
 .mt-radius-25 textarea,
