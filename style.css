@@ -786,6 +786,10 @@ table {
   padding-bottom: 0;
 }
 .widget label.screen-reader-text { display: none; }
+
+h3.heading {
+  font-size: 21px !important
+}
 .gallery-caption{}
 .bypostauthor{}
 
@@ -3822,9 +3826,6 @@ opacity: 0.7
   h2.heading.heading-left span,
   h2.heading.heading-right span {
     padding: 0 20px;
-  }
-  h3.heading {
-    font-size: 21px !important
   }
   .size-350 .poster-image {
     float: none !important;
