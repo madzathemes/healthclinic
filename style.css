@@ -2745,10 +2745,11 @@ h2.entry-title a {
 }
 .single-title {
   margin: 0;
-  font-weight: 900;
-  line-height: 1.1;
+  font-weight: 700;
+  line-height: 1;
   padding: 0;
   margin-top: -6px;
+  font-size: 55px;
 }
 .after-title {
   padding-top: 10px;
