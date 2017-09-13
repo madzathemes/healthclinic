@@ -10,6 +10,10 @@
           <h1><?php the_title(); ?></h1>
         <?php } else if(is_home()) { ?>
           <h1><?php echo esc_html__( 'News', "healthclinic"  ); ?></h1>
+        <?php } else if(is_category()) { ?>
+          <h1><?php echo esc_html__( 'Category: ', "healthclinic"  ); ?></h1>
+        <?php } else if(is_tag()) { ?>
+          <h1><?php echo esc_html__( 'Tag: ', "healthclinic"  ); ?></h1>
         <?php } else { ?>
           <h1><?php the_title(); ?></h1>
         <?php } ?>
