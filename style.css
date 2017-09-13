@@ -3823,6 +3823,9 @@ opacity: 0.7
   h2.heading.heading-right span {
     padding: 0 20px;
   }
+  h3.heading {
+    font-size: 21px !important
+  }
   .size-350 .poster-image {
     float: none !important;
     margin-right: 0 !important;
