@@ -9,7 +9,7 @@
 
 } ?>
 <?php function healthclinic_single_title() {
-  $subtitle = get_post_meta(get_the_ID(), "magazin_subtitle", true); ?>
+  $subtitle = get_post_meta(get_the_ID(), "magazin_subtitle", true); 
 } ?>
 <?php function healthclinic_single_social() {
 $share_top = "";
