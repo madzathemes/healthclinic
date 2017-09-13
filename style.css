@@ -77,7 +77,8 @@ a:hover,
 .mtc-border-5,
 .mt-radius-5 .footer-scroll-to-top,
 .mt-radius-5 .post-img img,
-.mt-radius-5 ul.menu  {
+.mt-radius-5 ul.menu,
+.mt-radius-5 .widget > ul  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
