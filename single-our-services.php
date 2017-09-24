@@ -35,24 +35,25 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 			<div class="row">
 					<div class="col-md-12">
 
-		<header>
-			<div class="entry-page-image">
+
+			<div class="entry-page-image mt-radius">
 
 					<?php
 
 					if(has_post_thumbnail()) {
 
-						echo get_the_post_thumbnail( get_the_ID(), array('750', '', ''), $src[0] );
+						echo get_the_post_thumbnail( get_the_ID(), array('1300', '', ''), $src[0] );
 
 					}
 
 					?>
 
 			</div>
-		</header>
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+		<div class="mt-content-text">	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<?php  the_content(); ?>
 		<?php endwhile; ?>
+	</div>
 </div>
 	</div>
 <?php } else { ?>
@@ -72,12 +73,13 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 				?>
 
 		</div>
-				<?php if ( have_posts() ) while ( have_posts() ) : the_post();
+		<div class="mt-content-text">		<?php if ( have_posts() ) while ( have_posts() ) : the_post();
 
 					the_content();
 					comments_template( '', true );
 
 				endwhile;  ?>
+			</div>
 
 	</div>
 

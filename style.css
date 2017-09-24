@@ -78,7 +78,9 @@ a:hover,
 .mt-radius-5 .footer-scroll-to-top,
 .mt-radius-5 .post-img img,
 .mt-radius-5 ul.menu,
-.mt-radius-5 .widget > ul  {
+.mt-radius-5 .widget > ul,
+.mt-radius-5 .kc-blog-posts-3 .kc-list-item-3 .content,
+.mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -101,7 +103,9 @@ a:hover,
 .mct-box:hover:before,
 .mct-box.active:before,
 .mt-radius-25 .footer-scroll-to-top,
-.mt-radius-25 .post-img img {
+.mt-radius-25 .post-img img,
+.mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .content,
+.mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper  {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -5451,3 +5455,30 @@ h2.widgettitle {
 
 /* Services & Staff */
 .entry-page-image { overflow: hidden; }
+.mt-content-text {
+  padding: 40px 0px 20px;
+}
+
+/* KC Post Module */
+body .kc-blog-posts-3 .kc-list-item-3 .content {
+    padding: 5px 25px;
+    box-shadow: 0px 0px 20px #ececec;
+    margin-top: 10px;
+    border: 1px solid #f0f0f0;
+}
+body .kc-blog-posts-3 .kc-list-item-3 .post-title-alt {
+  font-size: 18px;
+  text-transform: none;
+  padding-bottom: 10px;
+  font-size: 21px;
+}
+body .kc-blog-posts-3 .kc-list-item-3 .entry-excerpt p {
+  color: #8a99b0;
+  font-size: 15px;
+}
+body .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-link:hover img {
+  opacity: 0.9
+}
+.kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper {
+  overflow: hidden;
+}
