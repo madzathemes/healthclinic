@@ -5425,17 +5425,21 @@ ul.menu,
   padding: 20px 25px 20px;
   box-shadow: 0px 0px 20px #ececec;
 }
-.widget_nav_menu ul li {
+.widget_nav_menu ul li,
+.widget ul.menu li {
   border: 0px solid silver;
   padding: 0px 0px 1px 0px !important;
 }
-.widget_nav_menu ul li a {
+.widget_nav_menu ul li a,
+.widget ul.menu li a {
   border-left: 0px solid #ececec;
   padding: 20px;
   font-size: 16px;
   display: inline-block !important;
 }
 .widget_nav_menu ul li a:hover,
+.widget ul.menu li a:hover,
+.widget ul.menu li.current-menu-item a,
 .widget_nav_menu .current-menu-item a {
   border-left: 3px solid #2196f3;
   color: #2196f3;
@@ -5444,3 +5448,6 @@ ul.menu,
 h2.widgettitle {
   font-size: 36px
 }
+
+/* Services & Staff */
+.entry-page-image { overflow: hidden; }

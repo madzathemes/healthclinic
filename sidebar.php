@@ -1,39 +1,39 @@
 <div class="sidebar-widgets">
 <?php
 
-if (is_single()) {
+if (is_singular('our-staff')) {
 
-	if (is_single('our-staff')) {
+	if ( is_active_sidebar( 'sidebar-our-staff-widget-area' ) ) {
 
-		if ( is_active_sidebar( 'sidebar-our-staff-widget-area' ) ) {
+		dynamic_sidebar( 'sidebar-our-staff-widget-area' );
 
-			dynamic_sidebar( 'sidebar-our-staff-widget-area' );
+	} else {
 
-		} else {
+			if ( is_active_sidebar( 'sidebar-widget-area-1' ) ) {
 
-				if ( is_active_sidebar( 'sidebar-single-widget-area' ) ) {
+				dynamic_sidebar( 'sidebar-widget-area-1' );
 
-					dynamic_sidebar( 'sidebar-single-widget-area' );
+			}
+	}
 
-				}
-		}
+} else if (is_singular('our-services')) {
 
-	} else if (is_single('our-services')) {
+	if ( is_active_sidebar( 'sidebar-our-services-widget-area' ) ) {
 
-		if ( is_active_sidebar( 'sidebar-our-services-widget-area' ) ) {
+		dynamic_sidebar( 'sidebar-our-services-widget-area' );
 
-			dynamic_sidebar( 'sidebar-our-services-widget-area' );
+	} else {
 
-		} else {
+			if ( is_active_sidebar( 'sidebar-widget-area-1' ) ) {
 
-				if ( is_active_sidebar( 'sidebar-single-widget-area' ) ) {
+				dynamic_sidebar( 'sidebar-widget-area-1' );
 
-					dynamic_sidebar( 'sidebar-single-widget-area' );
+			}
+	}
 
-				}
-		}
+} else if (is_single()) {
 
-	} else if(function_exists( 'is_woocommerce' ) ) {
+ if(function_exists( 'is_woocommerce' ) ) {
 
 			if (is_woocommerce()) {
 

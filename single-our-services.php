@@ -59,13 +59,13 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 
 <div class="row">
 	<div class="col-md-<?php if ($layout == "3" or $layout == "") { echo "12 ";  } else {  echo "8 ";  } echo sanitize_html_class($float_layout); ?> ">
-		<div class="entry-page-image">
+		<div class="entry-page-image mt-radius">
 
 				<?php
 
 				if(has_post_thumbnail()) {
 
-					echo get_the_post_thumbnail( get_the_ID(), array('750', '', ''), $src[0] );
+					echo get_the_post_thumbnail( get_the_ID(), array('854', '', ''), $src[0] );
 
 				}
 
@@ -83,7 +83,7 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 
 	<?php if ($layout == "3" or $layout == "") {} else { ?>
 
-		<div class="col-md-4 sidebar <?php echo sanitize_html_class($mt_float_sidebar); ?> " temscope="itemscope" itemtype="http://schema.org/WPSideBar"><?php get_sidebar(); ?></div>
+		<div class="col-md-4 sidebar <?php echo sanitize_html_class($float_sidebar); ?> " temscope="itemscope" itemtype="http://schema.org/WPSideBar"><?php get_sidebar(); ?></div>
 
 	<?php } ?>
 
