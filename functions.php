@@ -84,27 +84,8 @@ function healthclinic_import_files() {
         array(
             'import_file_name'             => esc_html__( 'healthclinic Full', 'healthclinic' ),
             'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo1/demo.xml',
-            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/import/demo1/widgets.json',
-            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo1/customizer.dat',
-            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'healthclinic' ),
-        ),
-				array(
-            'import_file_name'             => esc_html__( 'healthclinic - Style & Pages', 'healthclinic' ),
-						'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo1/pages.xml',
-            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo1/customizer.dat',
-            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'healthclinic' ),
-        ),
-				array(
-            'import_file_name'             => esc_html__( 'BoomCraft Full', 'healthclinic' ),
-            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo2/demo.xml',
-            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/import/demo2/widgets.json',
-            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo2/customizer.dat',
-            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'healthclinic' ),
-        ),
-				array(
-            'import_file_name'             => esc_html__( 'BoomCraft - Style & Pages', 'healthclinic' ),
-						'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo2/pages.xml',
-            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo2/customizer.dat',
+            #'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/import/demo1/widgets.json',
+            #'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo1/customizer.dat',
             'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'healthclinic' ),
         ),
     );
