@@ -42,7 +42,7 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 
 					if(has_post_thumbnail()) {
 
-						echo get_the_post_thumbnail( get_the_ID(), array('750', '', 'bfi_thumb' => true), $src[0] );
+						echo get_the_post_thumbnail( get_the_ID(), array('750'), $src[0] );
 
 					}
 
