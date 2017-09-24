@@ -5,6 +5,7 @@
  */
 
 get_header();
+$src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 999,999 ), false, '' );
 ?>
 <div class="mt-container-wrap"  itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
