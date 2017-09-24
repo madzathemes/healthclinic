@@ -18,19 +18,19 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 			if(!empty($layouts)){
 				$layout= $layouts;
 			} else {
-				$layout = "3";
+				$layout = "full";
 			}
 			$float_layout = "pull-left";
 			$float_sidebar = "pull-right";
 
-			if ($layout == "2") {
+			if ($layout == "left") {
 				$float_layout = "pull-right";
 				$float_sidebar = "pull-left";
 			}
 
 			$more = 0;
 
-			if ($layout == "3") {
+			if ($layout == "full") {
 			?>
 			<div class="row">
 					<div class="col-md-12">
@@ -58,7 +58,7 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 <?php } else { ?>
 
 <div class="row">
-	<div class="col-md-<?php if ($layout == "3" or $layout == "") { echo "12 ";  } else {  echo "8 ";  } echo sanitize_html_class($float_layout); ?> ">
+	<div class="col-md-<?php if ($layout == "full" or $layout == "") { echo "12 ";  } else {  echo "8 ";  } echo sanitize_html_class($float_layout); ?> ">
 		<div class="entry-page-image">
 
 				<?php
@@ -81,7 +81,7 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 
 	</div>
 
-	<?php if ($layout == "3" or $layout == "") {} else { ?>
+	<?php if ($layout == "full" or $layout == "") {} else { ?>
 
 		<div class="col-md-4 sidebar <?php echo sanitize_html_class($mt_float_sidebar); ?> " temscope="itemscope" itemtype="http://schema.org/WPSideBar"><?php get_sidebar(); ?></div>
 

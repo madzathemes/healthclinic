@@ -3,7 +3,37 @@
 
 if (is_single()) {
 
-	if(function_exists( 'is_woocommerce' ) ) {
+	if (is_single('our-staff')) {
+
+		if ( is_active_sidebar( 'sidebar-our-staff-widget-area' ) ) {
+
+			dynamic_sidebar( 'sidebar-our-staff-widget-area' );
+
+		} else {
+
+				if ( is_active_sidebar( 'sidebar-single-widget-area' ) ) {
+
+					dynamic_sidebar( 'sidebar-single-widget-area' );
+
+				}
+		}
+
+	} else if (is_single('our-services')) {
+
+		if ( is_active_sidebar( 'sidebar-our-services-widget-area' ) ) {
+
+			dynamic_sidebar( 'sidebar-our-services-widget-area' );
+
+		} else {
+
+				if ( is_active_sidebar( 'sidebar-single-widget-area' ) ) {
+
+					dynamic_sidebar( 'sidebar-single-widget-area' );
+
+				}
+		}
+
+	} else if(function_exists( 'is_woocommerce' ) ) {
 
 			if (is_woocommerce()) {
 

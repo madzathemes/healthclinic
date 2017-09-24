@@ -42,6 +42,31 @@ $mt_columns = get_option("healthclinic_theme_options");
 				'before_title' => '<h3 class="heading"><span>',
 				'after_title' => '</span></h3>',
 	) );
+
+	/* --------------------------------------------------------------------------------------- Single Widget Area */
+
+		register_sidebar( array(
+			'name' => esc_html__( 'Our Services Sidebar', 'healthclinic'),
+			'id' => 'sidebar-our-services-widget-area',
+			'description' => esc_html__( 'The our services single page sidebar widget area' , 'healthclinic'),
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '<div class="clear"></div></div>',
+					'before_title' => '<h3 class="heading"><span>',
+					'after_title' => '</span></h3>',
+		) );
+
+		/* --------------------------------------------------------------------------------------- Single Widget Area */
+
+		register_sidebar( array(
+			'name' => esc_html__( 'Our Staff Sidebar', 'healthclinic'),
+			'id' => 'sidebar-our-staff-widget-area',
+			'description' => esc_html__( 'The our staff single page sidebar widget area' , 'healthclinic'),
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '<div class="clear"></div></div>',
+					'before_title' => '<h3 class="heading"><span>',
+					'after_title' => '</span></h3>',
+		) );
+
 	/* --------------------------------------------------------------------------------------- Single Buttom Widget Area */
 
 		register_sidebar( array(
