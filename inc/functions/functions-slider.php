@@ -22,7 +22,7 @@ if (!empty($entries)) { ?>
 
 			echo '<div class="mt-slider-slide '. esc_html($entry['position') .'" style="background-image:url('. esc_url($img) .')">';
 
-				echo '<div class="container"><div class="mt-slider-content">';
+				echo '<div class="container"><div class="mt-slider-content '. esc_html($entry['position') .'">';
 
           if ( !empty( $entry['subtitle'] ) ) {
             echo '<h3>'. esc_html( $entry['subtitle'] ) .'</h3>';
