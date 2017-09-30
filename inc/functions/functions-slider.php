@@ -28,6 +28,8 @@ if (!empty($entries)) { ?>
             echo '<h3>'. esc_html( $entry['subtitle'] ) .'</h3>';
           }
 
+          echo '<div class="clear"></div>';
+
 			    if ( !empty( $entry['title'] ) ) {
 			      echo '<h2>'. esc_html( $entry['title'] ) .'</h2>';
 						$title = esc_html( $entry['title'] );
