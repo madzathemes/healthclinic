@@ -26,23 +26,19 @@ if (!empty($entries)) { ?>
 
           if ( !empty( $entry['subtitle'] ) ) {
             echo '<h3>'. esc_html( $entry['subtitle'] ) .'</h3>';
+            echo '<div class="clearfix"></div>';
           }
-
-          echo '<div class="clear"></div>';
-
+          
 			    if ( !empty( $entry['title'] ) ) {
 			      echo '<h2>'. esc_html( $entry['title'] ) .'</h2>';
 						$title = esc_html( $entry['title'] );
+            echo '<div class="clearfix"></div>';
 			    }
-
-          echo '<div class="clear"></div>';
 
 			    if ( !empty( $entry['description'] ) ) {
 			        echo wpautop( $entry['description'] );
+              echo '<div class="clearfix"></div>';
 			    }
-
-
-          echo '<div class="clear"></div>';
 
 					if ( !empty( $entry['button_1_name'] ) and !empty( $entry['button_1_url'] ) ) {
 			        echo '<a class="mt-btn mt-btn-1 mt-radius" href="'. esc_html( $entry['button_1_url'] ) .'">'. esc_html( $entry['button_1_name'] ) .'</a>';
