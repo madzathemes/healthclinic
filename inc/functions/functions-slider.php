@@ -20,7 +20,7 @@ if (!empty($entries)) { ?>
 
 			if ( !empty( $entry['image_id'] ) ) { $img = wp_get_attachment_image_url( $entry['image_id'], 'full', null ); }
 
-			echo '<div class="mt-slider-slide" style="background-image:url('. esc_url($img) .')">';
+			echo '<div class="mt-slider-slide '. esc_html($entry['position') .'" style="background-image:url('. esc_url($img) .')">';
 
 				echo '<div class="container"><div class="mt-slider-content">';
 
