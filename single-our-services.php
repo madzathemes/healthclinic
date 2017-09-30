@@ -23,7 +23,7 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 			$float_layout = "pull-left";
 			$float_sidebar = "pull-right";
 
-			if ($layout == "2") {
+			if ($layout == "2" or $layout == "") {
 				$float_layout = "pull-right";
 				$float_sidebar = "pull-left";
 			}
