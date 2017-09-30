@@ -41,6 +41,7 @@ if (!empty($entries)) { ?>
 			        echo wpautop( $entry['description'] );
 			    }
 
+
           echo '<div class="clear"></div>';
 
 					if ( !empty( $entry['button_1_name'] ) and !empty( $entry['button_1_url'] ) ) {
