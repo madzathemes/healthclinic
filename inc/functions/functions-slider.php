@@ -24,7 +24,7 @@ if (!empty($entries)) { ?>
 
        if ( !empty( $entry['position'] ) ) {
 
-         esc_html($entry['position']);
+          echo esc_html($entry['position']);
 
        }
 
@@ -34,7 +34,7 @@ if (!empty($entries)) { ?>
 
          if ( !empty( $entry['position'] ) ) {
 
-           esc_html($entry['position']);
+            echo esc_html($entry['position']);
 
          }
 
