@@ -35,10 +35,13 @@ if (!empty($entries)) { ?>
 						$title = esc_html( $entry['title'] );
 			    }
 
+          echo '<div class="clear"></div>';
+
 			    if ( !empty( $entry['description'] ) ) {
 			        echo wpautop( $entry['description'] );
 			    }
 
+          echo '<div class="clear"></div>';
 
 					if ( !empty( $entry['button_1_name'] ) and !empty( $entry['button_1_url'] ) ) {
 			        echo '<a class="mt-btn mt-btn-1 mt-radius" href="'. esc_html( $entry['button_1_url'] ) .'">'. esc_html( $entry['button_1_name'] ) .'</a>';
