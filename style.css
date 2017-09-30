@@ -5224,6 +5224,8 @@ li.mtc-buy {
 .mt-slide-center h2,
 .mt-slide-center h3 { margin: 0 auto; }
 .mt-slide-right { text-align: right }
+.mt-slide-right h2,
+.mt-slide-right h3 { float: right; }
 .mt-slider h2 {
   color: white;
   padding: 0 0 20px;
