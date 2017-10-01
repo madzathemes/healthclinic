@@ -105,6 +105,32 @@ function healthclinic_customize_footer($wp_customize){
 				'settings'   => 'healthclinic_theme_options[footer_page]',
 		));
 
+		// FOOTER PAGE SORCE Staff
+		$wp_customize->add_setting('healthclinic_theme_options[footer_page_staff]', array(
+				'capability'     => 'edit_theme_options',
+				'type'           => 'option',
+        'sanitize_callback' => 'esc_attr'
+		));
+		$wp_customize->add_control('footer_page_staff', array(
+				'label'      => esc_html__('Staff Page', 'healthclinic'),
+				'section'    => 'healthclinic_footer_bottom',
+				'type'    => 'dropdown-pages',
+				'settings'   => 'healthclinic_theme_options[footer_page_staff]',
+		));
+
+		// FOOTER PAGE SORCE Services
+		$wp_customize->add_setting('healthclinic_theme_options[footer_page_services]', array(
+				'capability'     => 'edit_theme_options',
+				'type'           => 'option',
+        'sanitize_callback' => 'esc_attr'
+		));
+		$wp_customize->add_control('footer_page_services', array(
+				'label'      => esc_html__('Service Page', 'healthclinic'),
+				'section'    => 'healthclinic_footer_bottom',
+				'type'    => 'dropdown-pages',
+				'settings'   => 'healthclinic_theme_options[footer_page_services]',
+		));
+
     //  FOOTER BOOTOM TOP
     $wp_customize->add_setting('healthclinic_theme_options[footer_top]', array(
     		'default'        => "",
