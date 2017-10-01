@@ -114,7 +114,7 @@ a:hover,
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  border-top-left-radius: 0px!important;
+  border-top-left-radius: 25px!important;
 }
 .mt-radius-5 .poster-image::before {
   -webkit-border-radius: 6px;
