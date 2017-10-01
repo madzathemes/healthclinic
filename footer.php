@@ -26,6 +26,7 @@
 			</div>
 		<?php endwhile; wp_reset_postdata(); ?>
 	<?php } } ?>
+	
 	<?php if(is_singular('our-staff')){ if(!empty($option['footer_page_staff'])){ ?>
 		<?php $footer_page = $option['footer_page_staff']; ?>
 		<?php $footer = new WP_Query("page_id=$footer_page"); while($footer->have_posts()) : $footer->the_post(); ?>
