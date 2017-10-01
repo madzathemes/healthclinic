@@ -128,6 +128,9 @@ a:hover,
   -moz-border-radius: 0;
   border-radius: 0;
 }
+input {
+border-top-left-radius:0px!important;
+}
 
 .mt-color-2 .post-content-wrap,
 .mt-color-2.post-style-6 .post-media-wrap,
