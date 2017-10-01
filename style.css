@@ -85,7 +85,7 @@ a:hover,
 .mt-radius-5 .footer input  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 5px!important;
 }
 .mt-radius-25 ul.menu,
 .mt-radius-25 .widget > ul,
@@ -112,7 +112,7 @@ a:hover,
 .mt-radius-25 .footer input   {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  border-radius: 25px;
+  border-radius: 25px!important;
 }
 .mt-radius-5 .poster-image::before {
   -webkit-border-radius: 6px;
