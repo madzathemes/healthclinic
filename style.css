@@ -128,7 +128,7 @@ a:hover,
   -moz-border-radius: 0;
   border-radius: 0;
 }
-input {
+input, textarea {
 border-top-left-radius:0px!important;
 }
 
