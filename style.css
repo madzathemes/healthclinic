@@ -86,6 +86,9 @@ a:hover,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.mt-radius-25 .footer textarea,
+.mt-radius-25 .footer input {
   border-top-left-radius: 5px!important;
 }
 .mt-radius-25 ul.menu,
@@ -114,6 +117,9 @@ a:hover,
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
+}
+.mt-radius-25 .footer textarea,
+.mt-radius-25 .footer input {
   border-top-left-radius: 25px!important;
 }
 .mt-radius-5 .poster-image::before {
