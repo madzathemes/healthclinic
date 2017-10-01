@@ -5495,3 +5495,7 @@ body .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-link:hover img {
 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper {
   overflow: hidden;
 }
+.mt-shadow {
+  box-shadow: 0px 0px 20px #eef4f9;
+  border: 1px solid #f0f0f0;
+}
