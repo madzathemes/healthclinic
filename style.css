@@ -80,7 +80,9 @@ a:hover,
 .mt-radius-5 ul.menu,
 .mt-radius-5 .widget > ul,
 .mt-radius-5 .kc-blog-posts-3 .kc-list-item-3 .content,
-.mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper  {
+.mt-radius-5 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper,
+.mt-radius-5 .footer textarea,
+.mt-radius-5 .footer input  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -105,7 +107,9 @@ a:hover,
 .mt-radius-25 .footer-scroll-to-top,
 .mt-radius-25 .post-img img,
 .mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .content,
-.mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper  {
+.mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper,
+.mt-radius-25 .footer textarea,
+.mt-radius-25 .footer input   {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
