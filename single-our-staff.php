@@ -18,7 +18,7 @@ $src = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array( 9
 			if(!empty($layouts)){
 				$layout= $layouts;
 			} else {
-				$layout = "3";
+				$layout = "2";
 			}
 			$float_layout = "pull-left";
 			$float_sidebar = "pull-right";
