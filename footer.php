@@ -18,6 +18,22 @@
 		<?php } ?>
 
 	<?php $option = get_option("healthclinic_theme_options"); ?>
+	<?php if(is_singular('our-services')){ if(!empty($option['footer_page_services'])){ ?>
+		<?php $footer_page = $option['footer_page_services']; ?>
+		<?php $footer = new WP_Query("page_id=$footer_page"); while($footer->have_posts()) : $footer->the_post(); ?>
+			<div class="container footer-page">
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile; wp_reset_postdata(); ?>
+	<?php } } ?>
+	<?php if(is_singular('our-services')){ if(!empty($option['footer_page_staff'])){ ?>
+		<?php $footer_page = $option['footer_page_staff']; ?>
+		<?php $footer = new WP_Query("page_id=$footer_page"); while($footer->have_posts()) : $footer->the_post(); ?>
+			<div class="container footer-page">
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile; wp_reset_postdata(); ?>
+	<?php } } ?>
 	<?php if(!empty($option['footer_page'])){ ?>
 		<?php $footer_page = $option['footer_page']; ?>
 		<?php $footer = new WP_Query("page_id=$footer_page"); while($footer->have_posts()) : $footer->the_post(); ?>
