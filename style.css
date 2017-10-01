@@ -86,7 +86,7 @@ a:hover,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border-top-left-radius: 0px!important;
+  border-top-left-radius: 5px!important;
 }
 .mt-radius-25 ul.menu,
 .mt-radius-25 .widget > ul,
