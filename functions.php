@@ -119,11 +119,18 @@ add_action( 'pt-ocdi/after_import', 'healthclinic_after_import_setup' );
  * @param type $enabled
  * @return boolean
  */
-function disbale_wpes_on_media_search($enabled) {
+function healthclinic_disbale_wpes_on_media_search($enabled) {
     if ((defined('DOING_AJAX') && DOING_AJAX) && isset($_REQUEST['action']) && $_REQUEST['action'] == 'query-attachments') {
         return false;
     }
 
     return $enabled;
 }
-add_filter('wpes_enabled', 'disbale_wpes_on_media_search');
+add_filter('wpes_enabled', 'healthclinic_disbale_wpes_on_media_search');
+
+add_action('init', 'healthclinic_your_init', 99 );
+
+function healthclinic_your_init(){
+	global $kc;
+	$kc->add_content_type( 'our-services' );
+}
