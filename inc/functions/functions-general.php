@@ -173,7 +173,7 @@ function healthclinic_breadcrumbs() {
 
   if ( !is_home() && !is_front_page() || is_paged() ) {
 
-    echo '<div id="breadcrumb-style">';
+    echo '<div class="mt-breadcrumb">';
 
     global $post;
     $homeLink = esc_url(home_url('/'));

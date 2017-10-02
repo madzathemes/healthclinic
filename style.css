@@ -5528,3 +5528,9 @@ body .kc_single_image img {
   padding-top: 0px;
   font-weight: 400;
 }
+.mt-breadcrumb {
+  color: white;
+}
+.mt-breadcrumb a {
+  color: white;
+}
