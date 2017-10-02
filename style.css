@@ -5530,6 +5530,7 @@ body .kc_single_image img {
 }
 .mt-breadcrumb {
   color: white;
+  margin-top: 10px;
 }
 .mt-breadcrumb a {
   color: white;
