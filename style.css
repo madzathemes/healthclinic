@@ -5520,3 +5520,6 @@ body .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-link:hover img {
 .kc-pricing-layout-4 .content-desc li:nth-of-type(2n+1) {
   background: #fff !important;
 }
+.kc_single_image img {
+  display: inline-block;
+}
