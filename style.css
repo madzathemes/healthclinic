@@ -5523,3 +5523,7 @@ body .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-link:hover img {
 body .kc_single_image img {
   display: inline-block;
 }
+.mt-page-subtitle {
+  color: white;
+  padding-top: 0px;
+}
