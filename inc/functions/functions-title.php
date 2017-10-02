@@ -23,6 +23,7 @@ $subtitle = get_post_meta(get_the_ID(), "madzaplug_sub_title", true);
         <?php } else { ?>
           <h1><?php the_title(); ?></h1>
           <?php  if(!empty($subtitle)){ ?><h4 class="mt-page-subtitle" itemprop="description"><?php echo esc_html($subtitle); ?></h2><?php } ?>
+            <?php healthclinic_breadcrumbs(); ?>
         <?php } ?>
       </div>
     </div>
