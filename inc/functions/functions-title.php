@@ -9,7 +9,7 @@ $subtitle = get_post_meta(get_the_ID(), "madzaplug_sub_title", true);
         <?php } else if(is_page()) { ?>
           <h1><?php the_title(); ?></h1>
           <?php  if(!empty($subtitle)){ ?><h4 class="mt-page-subtitle" itemprop="description"><?php echo esc_html($subtitle); ?></h2><?php } ?>
-
+            <?php echo rimi_breadcrumbs(); ?>
         <?php } else if(is_home()) { ?>
           <h1><?php echo esc_html__( 'News', "healthclinic"  ); ?></h1>
           <?php  if(!empty($subtitle)){ ?><h2 class="single-subtitle" itemprop="description"><?php echo esc_html($subtitle); ?></h2><?php } ?>
