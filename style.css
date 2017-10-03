@@ -5462,6 +5462,7 @@ body .kc-call-to-action .kc-cta-button a {
 }
 body .kc-call-to-action .kc-cta-desc h2 {
   font-size: 36px;
+  padding-bottom: 15px;
 }
 body .kc-call-to-action .kc-cta-text {
   font-size: 21px;
