@@ -1098,8 +1098,7 @@ ul.sf-menu ul, div.sf-menu ul ul {
   margin-left: -15px;
   background: #fff;
   padding: 5px;
-  border-top-right-radius: 0px!important;
-  border-top-left-radius: 0px!important;
+  margin-top:5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
 }
 ul.sf-menu ul ul, div.sf-menu ul ul ul {
