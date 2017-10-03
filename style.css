@@ -5461,6 +5461,9 @@ body .kc-call-to-action .kc-cta-button a {
   background-color: #2195f3;
   color: white;
 }
+body .kc-call-to-action .kc-cta-desc h2 {
+  font-size: 36px;
+}
 body .kc-call-to-action .kc-cta-text {
   font-size: 21px;
   color: #8a99b0;
