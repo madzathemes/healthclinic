@@ -5453,6 +5453,7 @@ body .kc_button,
   font-weight: 600;
   padding-right: 30px;
   padding-left: 30px;
+  text-transform: none
 }
 body .kc_button:hover {
   background-color: #2196f3;
