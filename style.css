@@ -5538,6 +5538,10 @@ body .kc_single_image img {
 }
 body .kc-call-to-action {
   background: none;
+  padding: 40px 80px;
+}
+body .kc-call-to-action .kc-cta-desc h2 {
+  margin-top: 0px;
 }
 body .kc-call-to-action .kc-cta-desc h2, .kc-call-to-action .kc-cta-text {
   margin-bottom: 0px;
