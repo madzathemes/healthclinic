@@ -5446,7 +5446,7 @@ body .kc-fb-layout-2 .content-button a:hover {
     background-color: #2196f3;
 }
 body .kc_button,
-.kc-call-to-action .kc-cta-button a {
+body .kc-call-to-action .kc-cta-button a {
   color: #262626;
   background-color: #ecedf1;
   font-size: 13px;
@@ -5455,7 +5455,7 @@ body .kc_button,
   padding-left: 30px;
   text-transform: none
 }
-.kc-call-to-action .kc-cta-button a {
+body .kc-call-to-action .kc-cta-button a {
   font-size: 21px;
   background-color: #2195f3;
   color: white;
