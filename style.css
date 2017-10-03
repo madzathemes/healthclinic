@@ -5428,6 +5428,7 @@ body .kc-fb-layout-2 .content-title {
 body .kc-fb-layout-2 .content-desc {
   margin: 0 0 20px;
   color: #8a99b0;
+  line-height: 1.618
 }
 body .content-button a {
     color: #ffffff;
