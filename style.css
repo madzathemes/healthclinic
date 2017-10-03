@@ -5455,6 +5455,15 @@ body .kc_button,
   padding-left: 30px;
   text-transform: none
 }
+.kc-call-to-action .kc-cta-button a {
+  font-size: 21px;
+  background-color: #2195f3;
+  color: white;
+}
+body .kc-call-to-action .kc-cta-text {
+  font-size: 21px;
+  color: #8a99b0;
+}
 body .kc_button:hover {
   background-color: #2196f3;
   color: white;
