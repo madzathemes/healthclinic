@@ -5583,3 +5583,6 @@ body .kc_accordion_header>a {
 body .kc_accordion_section>.kc_accordion_header {
   padding: 5px;
 }
+body .kc_accordion_header>span.ui-accordion-header-icon {
+  margin: 23px;
+}
