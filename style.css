@@ -5577,3 +5577,6 @@ body .kc_accordion_header>a {
   font-weight: bold;
   font-size: 21px;
 }
+body .kc_accordion_section>.kc_accordion_header {
+  padding: 5px;
+}
