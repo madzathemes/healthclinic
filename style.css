@@ -5560,3 +5560,13 @@ body .kc-call-to-action .kc-cta-desc h2 {
 body .kc-call-to-action .kc-cta-desc h2, .kc-call-to-action .kc-cta-text {
   margin-bottom: 0px;
 }
+body .kc-blog-posts .kc-post-2-button {
+    float: left;
+    padding: 0px 0px; 
+    border: 0px solid #ddd;
+    border-radius: 2px;
+    color: #000;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
