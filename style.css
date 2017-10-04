@@ -5586,3 +5586,6 @@ body .kc_accordion_section>.kc_accordion_header {
 body .kc_accordion_header>span.ui-accordion-header-icon {
   margin: 23px;
 }
+body .kc_accordion_content {
+  border: 0px solid silver;
+}
