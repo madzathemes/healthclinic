@@ -134,7 +134,7 @@ a:hover,
 .poster .number,
 .head-nav > div::before,
 .head-nav .mt-head-arrow::after,
-.mt-radius-25 .kc_accordion_section>.kc_accordion_header{
+.mt-radius-25 .kc_accordion_section>.kc_accordion_header {
   -webkit-border-radius: 55px;
   -moz-border-radius: 55px;
   border-radius: 55px;
