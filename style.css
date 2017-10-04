@@ -83,7 +83,8 @@ a:hover,
 .mt-radius-5 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper,
 .mt-radius-5 .footer textarea,
 .mt-radius-5 .footer input,
-.mt-radius-5 .kc-call-to-action .kc-cta-button a  {
+.mt-radius-5 .kc-call-to-action .kc-cta-button a,
+.mt-radius-5 .kc_accordion_header>a  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -115,7 +116,8 @@ a:hover,
 .mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper,
 .mt-radius-25 .footer textarea,
 .mt-radius-25 .footer input,
-.mt-radius-25 .kc-call-to-action .kc-cta-button a   {
+.mt-radius-25 .kc-call-to-action .kc-cta-button a,
+.mt-radius-25 .kc_accordion_header>a   {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -5571,9 +5573,10 @@ body .kc-blog-posts .kc-post-2-button {
     margin-bottom: 20px;
 }
 body .kc_accordion_content .kc-panel-body {
-  padding: 10px 20px 0px;
+  padding: 5px 30px 0px;
 }
 body .kc_accordion_header>a {
+  padding: 15px 25px;
   font-weight: bold;
   font-size: 21px;
 }
