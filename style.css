@@ -84,7 +84,8 @@ a:hover,
 .mt-radius-5 .footer textarea,
 .mt-radius-5 .footer input,
 .mt-radius-5 .kc-call-to-action .kc-cta-button a,
-.mt-radius-5 .kc_accordion_section>.kc_accordion_header  {
+.mt-radius-5 .kc_accordion_section>.kc_accordion_header,
+.mt-radius-5 .kc_tabs>.kc_wrapper>.kc_tabs_nav  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -119,7 +120,8 @@ a:hover,
 .mt-radius-25 .kc-blog-posts-3 .kc-list-item-3 .entry-thumb-wrapper,
 .mt-radius-25 .footer textarea,
 .mt-radius-25 .footer input,
-.mt-radius-25 .kc-call-to-action .kc-cta-button a  {
+.mt-radius-25 .kc-call-to-action .kc-cta-button a,
+.mt-radius-25 .kc_tabs>.kc_wrapper>.kc_tabs_nav  {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
