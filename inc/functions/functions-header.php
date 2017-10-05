@@ -87,6 +87,7 @@ else if(!empty($option['menu_background_width'])) {
 
 							<div class="nav pull-left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
 								<?php healthclinic_nav(); ?>
+								<div>a</div>
 								<div class="pull-right menu-background mt-radius">
 									<?php healthclinic_socials(); ?>
 								</div>
