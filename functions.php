@@ -37,7 +37,6 @@ define('KC_LICENSE', 'l483kg4m-jxbv-ju7k-or7h-yhgd-q3jl1ec3fqyi');
 /* Theme Setup
 /*-----------------------------------------------------------------------------------*/
 
-
 function healthclinic_theme_setup() {
 
 	add_editor_style();
