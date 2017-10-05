@@ -1245,7 +1245,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   font-weight: 700;
 }
 .head-nav > div::before {
-  content: "\e912";
+  content: "\e942";
   font-family: "madza";
   position: absolute;
   margin-left: -34px;
@@ -1257,14 +1257,14 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   padding: 6px;
 }
 .head-nav .mt-head-mail::before {
-  content: "\e913";
+  content: "\e914";
 }
 .head-nav .mt-head-address {
   padding: 0 0 0 34px;
   position: relative;
 }
 .head-nav .mt-head-address::before {
-  content: "\e914";
+  content: "\e946";
   margin-top: 4px;
 }
 .head-nav .mt-head-address span:first-child {
