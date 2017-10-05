@@ -957,7 +957,7 @@ ul.sf-menu ul ul, div.sf-menu ul ul ul  {
   padding-right: 5px;
 }
 .mt-menu-cursor:before {
-    content: "\e905";
+    content: "\e906";
     font-family: madza;
     margin-right: -8px;
 }
