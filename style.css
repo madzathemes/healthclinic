@@ -142,7 +142,8 @@ a:hover,
 .poster .number,
 .head-nav > div::before,
 .head-nav .mt-head-arrow::after,
-.mt-radius-25 .kc_accordion_section>.kc_accordion_header {
+.mt-radius-25 .kc_accordion_section>.kc_accordion_header,
+.mt-radius-25 .kc_wrapper>ul.ui-tabs-nav>li {
   -webkit-border-radius: 55px;
   -moz-border-radius: 55px;
   border-radius: 55px;
@@ -5601,4 +5602,10 @@ body .kc_accordion_content {
 body .kc_accordion_section>.kc_accordion_header {
   border: 0px solid silver;
   background: #f5f5f5;
+}
+body .kc_tabs_nav>.ui-tabs-active>a,
+body .kc_tabs_nav>li:hover,
+body .kc_tabs_nav>li>a:hover {
+  background: #2194f3;
+  color:white;
 }
