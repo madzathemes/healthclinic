@@ -87,7 +87,12 @@ else if(!empty($option['menu_background_width'])) {
 
 							<div class="nav pull-left" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
 								<?php healthclinic_nav(); ?>
-								<div>a</div>
+								<div><?php if( WC()->cart->get_cart_contents_count() > 0){ ?>
+  <li>
+    <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View my car' ); ?>"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+    </a>
+  </li>
+  <? } ?></div>
 								<div class="pull-right menu-background mt-radius">
 									<?php healthclinic_socials(); ?>
 								</div>
