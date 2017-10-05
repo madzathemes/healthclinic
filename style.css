@@ -85,7 +85,8 @@ a:hover,
 .mt-radius-5 .footer input,
 .mt-radius-5 .kc-call-to-action .kc-cta-button a,
 .mt-radius-5 .kc_accordion_section>.kc_accordion_header,
-.mt-radius-5 .kc_tabs>.kc_wrapper>.kc_tabs_nav  {
+.mt-radius-5 .kc_tabs>.kc_wrapper>.kc_tabs_nav,
+.mt-radius-5 .kc-pricing-layout-2 .header-pricing .kc-pricing-price  {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -143,7 +144,8 @@ a:hover,
 .head-nav > div::before,
 .head-nav .mt-head-arrow::after,
 .mt-radius-25 .kc_accordion_section>.kc_accordion_header,
-.mt-radius-25 .kc_wrapper>ul.ui-tabs-nav>li {
+.mt-radius-25 .kc_wrapper>ul.ui-tabs-nav>li,
+.mt-radius-25 .kc-pricing-layout-2 .header-pricing .kc-pricing-price {
   -webkit-border-radius: 55px;
   -moz-border-radius: 55px;
   border-radius: 55px;
