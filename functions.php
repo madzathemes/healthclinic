@@ -36,7 +36,7 @@ define('KC_LICENSE', 'l483kg4m-jxbv-ju7k-or7h-yhgd-q3jl1ec3fqyi');
 /*-----------------------------------------------------------------------------------*/
 /* Theme Setup
 /*-----------------------------------------------------------------------------------*/
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
 
 function healthclinic_theme_setup() {
 
