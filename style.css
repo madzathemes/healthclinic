@@ -5611,3 +5611,7 @@ body .kc_tabs_nav>li>a:hover {
   background: #2194f3;
   color:white;
 }
+.mt-menu-cart {
+  display: inline-block;
+  padding:10px;
+}

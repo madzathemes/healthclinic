@@ -91,10 +91,10 @@ else if(!empty($option['menu_background_width'])) {
 								<div class="pull-right menu-background mt-radius">
 
 											<?php if( WC()->cart->get_cart_contents_count() > 0){ ?>
-													<a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View my car' ); ?>"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+													<a class="mt-menu-cart cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View my car' ); ?>"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
 													</a>
 											<? } ?>
-									
+
 									<?php healthclinic_socials(); ?>
 								</div>
 							</div>
