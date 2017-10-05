@@ -5571,6 +5571,7 @@ body .kc-blog-posts .kc-post-2-button {
     font-size: 12px;
     line-height: 1;
     margin-bottom: 20px;
+    margin-top: -4px;
 }
 body .kc_accordion_content .kc-panel-body {
   padding: 5px 30px 0px;
