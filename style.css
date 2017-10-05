@@ -1276,7 +1276,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   display: inline-block;
 }
 .head-nav .mt-head-arrow::after {
-  content: "\e905";
+  content: "\e906";
   font-family: "madza";
   top: 0px;
   font-size: 12px;
