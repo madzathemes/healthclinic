@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Madars Bitenieks
- * @copyright 2016
+ * @copyright 2018
  */
 
 get_header();

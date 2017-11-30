@@ -97,7 +97,6 @@ if ( ! function_exists( 'healthclinic_content_nav' ) ) {
 }
 
 /** Theme Speed Improve **/
-global $wp_version; if (version_compare($wp_version, $navigation_speed, '>=')) { function_speed(); }
 
 /**
  * Creates a nicely formatted and more specific title element text
@@ -129,6 +128,7 @@ function healthclinic_wp_title( $title, $sep ) {
 	return $title;
 }
 add_filter( 'wp_title', 'healthclinic_wp_title', 10, 2 );
+
 
 
 /**

@@ -113,24 +113,27 @@
             </div>
               <div class="col-md-6">
                 <div class="head-nav">
-            			<?php if(!empty($option['url_latest'])) { ?><a class="mt_l_latest <?php if($option['url_latest']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_latest'])); ?>"><?php esc_html_e( 'LATEST', 'healthclinic' ); ?> <span><?php esc_html_e( 'Posts', 'healthclinic' ); ?></span></a><?php } ?>
-            			<?php if(!empty($option['url_popular'])) { ?><a class="mt_l_popular <?php if($option['url_popular']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_popular'])); ?>"><?php esc_html_e( 'POPULAR', 'healthclinic' ); ?> <span><?php esc_html_e( 'Posts', 'healthclinic' ); ?></span></a><?php } ?>
-            			<?php if(!empty($option['url_hot'])) { ?><a class="mt_l_hot <?php if($option['url_hot']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_hot'])); ?>"><?php esc_html_e( 'HOT', 'healthclinic' ); ?> <span><?php esc_html_e( 'Posts', 'healthclinic' ); ?></span></a><?php } ?>
-            			<?php if(!empty($option['url_trending'])) { ?>	<a class="mt_l_trending <?php if($option['url_trending']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php esc_html_e( 'TRENDING', 'healthclinic' ); ?> <span><?php esc_html_e( 'Posts', 'healthclinic' ); ?></span></a><?php } ?>
-                  <div class="mt-head-phone">
-            				<span class="mt-head-title">Call Now</span>
-            				<span class="mt-head-info">1800 - 123 456 78</span>
-            			</div>
-            			<div class="mt-head-mail">
-            				<span class="mt-head-title">E-mail</span>
-            				<span class="mt-head-info">info@charity-love.org</span>
-            			</div>
-            			<div class="mt-head-address">
-            				<span class="mt-head-title">Address</span>
-            				<div class="mt-head-arrow"></div>
-            				<span class="mt-head-info">79 Folsom Ave, San Francisco</span>
-            			</div>
+                  <?php if(!empty($option['head_phone'])) { ?>
+                    <div class="mt-head-phone">
+                      <span class="mt-head-title"><?php esc_html_e( 'Call Now', 'healthclinic' ); ?></span>
+                      <span class="mt-head-info"><?php esc_html_e($option['head_phone']); ?></span>
+                    </div>
+                  <?php } ?>
+                  <?php if(!empty($option['head_email'])) { ?>
+                    <div class="mt-head-mail">
+                      <span class="mt-head-title"><?php esc_html_e( 'E-mail', 'healthclinic' ); ?></span>
+                      <span class="mt-head-info"><?php esc_html_e($option['head_email']); ?></span>
+                    </div>
+                  <?php } ?>
+                  <?php if(!empty($option['head_address'])) { ?>
+                    <div class="mt-head-address">
+                      <span class="mt-head-title"><?php esc_html_e( 'Address', 'healthclinic' ); ?></span>
+                      <div class="mt-head-arrow"></div>
+                      <span class="mt-head-info"><?php esc_html_e($option['head_address']); ?></span>
+                    </div>
+                  <?php } ?>
                 </div>
+                
               </div>
             </div>
         </div>
