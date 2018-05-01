@@ -983,7 +983,6 @@ ul.sf-menu li ul, div.sf-menu ul li ul {
   display: block!important;
   visibility: hidden;
   opacity: 0;
-  height: 0!important;
   -webkit-backface-visibility: hidden;
   transform: translate(20px,0px);
   -webkit-transform: translate(20px,0px);
