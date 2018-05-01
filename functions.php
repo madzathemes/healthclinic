@@ -126,10 +126,3 @@ function healthclinic_disbale_wpes_on_media_search($enabled) {
     return $enabled;
 }
 add_filter('wpes_enabled', 'healthclinic_disbale_wpes_on_media_search');
-
-add_action('init', 'healthclinic_your_init', 99 );
-
-function healthclinic_your_init(){
-	global $kc;
-	$kc->add_content_type( 'our-services' );
-}
