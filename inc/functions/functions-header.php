@@ -93,7 +93,7 @@ else if(!empty($option['menu_background_width'])) {
 											<?php if(function_exists( 'is_woocommerce' ) ) { if( WC()->cart->get_cart_contents_count() > 0){ ?>
 													<a class="mt-menu-cart cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View my car' ); ?>"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
 													</a>
-											<? } } ?>
+											<?php } } ?>
 
 									<?php healthclinic_socials(); ?>
 								</div>
