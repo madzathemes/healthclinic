@@ -250,4 +250,4 @@ function healthclinic_header_fixed() { ?>
 			</div>
 		</div>
 	</div>
-<?php } add_filter('healthclinic_header_fixed','healthclinic_header_fixed'); ?>
+<?php } add_filter('healthclinic_header_fixed','healthclinic_header_fixed');
